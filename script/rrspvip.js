@@ -140,6 +140,5 @@ obj.data.user.vipMedal = {
     "id": 1,
     "isExpired": false
 };
-body = JSON.stringify(obj);
 
 $done({body: JSON.stringify(obj)});
