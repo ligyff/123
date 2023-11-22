@@ -8,7 +8,7 @@ obj.data.user.vipInfo = {
 obj.data.user.vipLevel = "5";
 obj.data.user.medalList = [{
     "name": "大魔王",
-    "endTime": "2299-02-22 02:44:53",
+    "endTime": "2052-5-15 1:7:32",
     "imgUrl": "",
     "id": 1
 }];
@@ -135,7 +135,7 @@ obj.data.user.privilegeList = [{
 }];
 obj.data.user.vipMedal = {
     "name": "大魔王",
-    "endTime": "2299-02-22 02:44:53",
+    "endTime": "2052-5-15 1:7:32",
     "imgUrl": "",
     "id": 1,
     "isExpired": false
