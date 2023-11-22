@@ -9,7 +9,7 @@ obj.data.user.vipLevel = "5";
 obj.data.user.medalList = [{
     "name": "大魔王",
     "endTime": "2052-5-15 1:7:32",
-    "imgUrl": "",
+    "imgUrl": "http://img.qwapp.top/cover/20200424/o_1587720799676.png",
     "id": 1
 }];
 obj.data.user.privilegeList = [{
@@ -136,7 +136,7 @@ obj.data.user.privilegeList = [{
 obj.data.user.vipMedal = {
     "name": "大魔王",
     "endTime": "2052-5-15 1:7:32",
-    "imgUrl": "",
+    "imgUrl": "http://img.qwapp.top/cover/20200424/o_1587720799676.png",
     "id": 1,
     "isExpired": false
 };

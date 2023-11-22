@@ -8,6 +8,7 @@
 [Script]
 rrsp=type=http-response,pattern=^http[s]?:\/\/api\.qwapp\.top\/user\/personal\/information,requires-body=1,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/rrspvip.js
 rrsp=type=http-response,pattern=^http[s]?:\/\/api\.qwapp\.top\/app\/drama\/page,requires-body=1,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/rrspvip1.js
+rrsp=type=http-response,pattern=^http[s]?:\/\/api\.qwapp\.top\/behavior\/v4\/existence\/subscriptions\/season,requires-body=1,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/rrspvip2.js
 
 
 [MITM]

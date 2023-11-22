@@ -25,7 +25,7 @@ obj.data.sortedItems = [
         "canShowLogin": false,
         "canShowVip": true
     }
-],
+];
     obj.data.watchInfo.m3u8.sortedItems=[
         {
             "qualityDescription": "高清",
@@ -49,8 +49,9 @@ obj.data.sortedItems = [
             "canPlay": true,
             "initialQuality": true,
             "canShowLogin": false,
-            "canShowVip": true
+            "canShowVip": false
         }
-    ],
+    ];
+obj.data.watchInfo.m3u8.currentQuality = "AI_OD";
 
     $done({body: JSON.stringify(obj)});
