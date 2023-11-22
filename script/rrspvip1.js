@@ -23,7 +23,7 @@ obj.data.sortedItems = [
         "canPlay": true,
         "initialQuality": true,
         "canShowLogin": false,
-        "canShowVip": true
+        "canShowVip": false
     }
 ];
     obj.data.watchInfo.m3u8.sortedItems=[
