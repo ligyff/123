@@ -5,7 +5,8 @@
 
 [Script]
 chatGPT=type=http-response,pattern=^http[s]?:\/\/ios\.chat\.openai\.com\/backend-api\/accounts\/check\/v4-2023-04-27,requires-body=1,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/chatGPT.js
-chatGPT=type=http-response,pattern=^http[s]?:\/\/ios\.chat\.openai\.com\/backend-api\/settings\/beta_features,requires-body=1,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/chatGPT1.js
+chatGPT1=type=http-response,pattern=^http[s]?:\/\/ios\.chat\.openai\.com\/backend-api\/settings\/beta_features,requires-body=1,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/chatGPT1.js
+chatGPT1=type=http-response,pattern=^http[s]?:\/\/ios\.chat\.openai\.com\/backend-api\/models,requires-body=1,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/chatGPT2.js
 
 
 [MITM]

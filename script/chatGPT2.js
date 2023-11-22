@@ -1,65 +1,251 @@
 var obj = JSON.parse($response.body);
 
-const id = obj.account_ordering;
-obj.accounts.default.account.plan_type = "plus";
-obj.accounts.default.account.has_previously_paid_subscription = true;
-obj.accounts.default.account.processor = {
-    "a001": {
-        "has_customer_object": true
-    },
-    "b001": {
-        "has_transaction_history": false
-    },
-    "c001": {
-        "has_transaction_history": false
-    }
-};
-
-obj.accounts.default.features = [
-    "dalle_generate_single_prompt",
-    "arkose_gpt_35_experiment",
-    "browsing_available",
-    "disable_plus_upgrade_ui",
-    "dalle_3",
-    "breeze_available",
-    "arkose_enabled",
-    "bizmo_settings",
-    "conversation_bot_arkose",
-    "shareable_links",
-    "starter_prompts",
-    "plugins_available",
-    "unified_tool_ui",
-    "all_tools",
-    "invite_referral",
-    "code_interpreter_available",
-    "disable_team_upgrade_ui",
-    "allow_url_thread_creation",
-    "gizmo_live",
-    "gizmo_create",
-    "model_switcher",
-    "gizmo_ui",
-    "beta_features",
-    "new_plugin_oauth_endpoint",
-    "chat_preferences_available",
-    "disable_upgrade_ui",
-    "privacy_policy_nov_2023",
-    "user_settings_announcements"
-];
-
-obj.accounts.default.entitlement = {
-    "subscription_id": "d0dcb1fc-56aa-4cd9-90ef-37f1e03576d3",
-    "has_active_subscription": true,
-    "subscription_plan": "chatgptplusplan",
-    "expires_at": "2029-12-13T13:43:25+00:00"
-};
-
-obj.accounts.default.last_active_subscription = {
-    "subscription_id": "d0dcb1fc-56aa-4cd9-90ef-37f1e03576d3",
-    "purchase_origin_platform": "chatgpt_not_purchased",
-    "will_renew": true
-};
-
-obj.accounts["dcd05b61-c00a-4b72-abe5-43f236c3093f"] = obj.accounts.default;
-
+obj={
+    "models": [
+        {
+            "slug": "text-davinci-002-render-sha",
+            "max_tokens": 8191,
+            "title": "Default (GPT-3.5)",
+            "description": "Our fastest model, great for most everyday tasks.",
+            "tags": [
+                "gpt3.5"
+            ],
+            "capabilities": {},
+            "product_features": {}
+        },
+        {
+            "slug": "gpt-4",
+            "max_tokens": 32767,
+            "title": "GPT-4 (All Tools)",
+            "description": "Browsing, Advanced Data Analysis, and DALL·E are now built into GPT-4",
+            "tags": [
+                "gpt4"
+            ],
+            "capabilities": {},
+            "product_features": {
+                "attachments": {
+                    "type": "retrieval",
+                    "accepted_mime_types": [
+                        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                        "application/json",
+                        "text/x-c++",
+                        "text/x-java",
+                        "text/x-csharp",
+                        "application/msword",
+                        "text/x-tex",
+                        "application/x-latext",
+                        "text/x-c",
+                        "text/x-php",
+                        "text/plain",
+                        "text/markdown",
+                        "application/pdf",
+                        "text/x-sh",
+                        "text/x-script.python",
+                        "text/x-typescript",
+                        "text/x-ruby",
+                        "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                        "text/html",
+                        "text/javascript"
+                    ],
+                    "image_mime_types": [
+                        "image/jpeg",
+                        "image/png",
+                        "image/gif",
+                        "image/webp"
+                    ],
+                    "can_accept_all_mime_types": true
+                }
+            },
+            "enabled_tools": [
+                "tools",
+                "tools2"
+            ]
+        },
+        {
+            "slug": "gpt-4-browsing",
+            "max_tokens": 8191,
+            "title": "Web Browsing",
+            "description": "An experimental model that knows when and how to browse the internet",
+            "tags": [
+                "gpt4",
+                "beta"
+            ],
+            "capabilities": {},
+            "product_features": {},
+            "enabled_tools": [
+                "tools"
+            ]
+        },
+        {
+            "slug": "gpt-4-code-interpreter",
+            "max_tokens": 8192,
+            "title": "Advanced Data Analysis",
+            "description": "An experimental model that can solve tasks by generating Python code and executing it in a Jupyter notebook.\nYou can upload any kind of file, and ask model to analyse it, or produce a new file which you can download.",
+            "tags": [
+                "gpt4",
+                "beta"
+            ],
+            "capabilities": {},
+            "product_features": {
+                "attachments": {
+                    "type": "code_interpreter",
+                    "can_accept_all_mime_types": false
+                }
+            },
+            "enabled_tools": [
+                "tools2"
+            ]
+        },
+        {
+            "slug": "gpt-4-plugins",
+            "max_tokens": 8192,
+            "title": "Plugins",
+            "description": "An experimental model that knows when and how to use plugins",
+            "tags": [
+                "gpt4",
+                "beta"
+            ],
+            "capabilities": {},
+            "product_features": {},
+            "enabled_tools": [
+                "tools3"
+            ]
+        },
+        {
+            "slug": "gpt-4-gizmo",
+            "max_tokens": 32767,
+            "title": "GPTs",
+            "description": "Browsing, Advanced Data Analysis, and DALL·E are now built into GPT-4",
+            "tags": [
+                "gpt4",
+                "confidential",
+                "hidden",
+                "plus"
+            ],
+            "capabilities": {},
+            "product_features": {
+                "attachments": {
+                    "type": "retrieval",
+                    "accepted_mime_types": [
+                        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                        "application/json",
+                        "text/x-c++",
+                        "text/x-java",
+                        "text/x-csharp",
+                        "application/msword",
+                        "text/x-tex",
+                        "application/x-latext",
+                        "text/x-c",
+                        "text/x-php",
+                        "text/plain",
+                        "text/markdown",
+                        "application/pdf",
+                        "text/x-sh",
+                        "text/x-script.python",
+                        "text/x-typescript",
+                        "text/x-ruby",
+                        "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                        "text/html",
+                        "text/javascript"
+                    ],
+                    "image_mime_types": [
+                        "image/jpeg",
+                        "image/png",
+                        "image/gif",
+                        "image/webp"
+                    ],
+                    "can_accept_all_mime_types": true
+                }
+            },
+            "enabled_tools": [
+                "tools",
+                "tools2"
+            ]
+        },
+        {
+            "slug": "gpt-4-magic-create",
+            "max_tokens": 32767,
+            "title": "GPT Creator",
+            "description": "Browsing, Advanced Data Analysis, and DALL·E are now built into GPT-4",
+            "tags": [
+                "gpt4",
+                "confidential",
+                "hidden",
+                "plus"
+            ],
+            "capabilities": {},
+            "product_features": {
+                "attachments": {
+                    "type": "retrieval",
+                    "accepted_mime_types": [
+                        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                        "application/json",
+                        "text/x-c++",
+                        "text/x-java",
+                        "text/x-csharp",
+                        "application/msword",
+                        "text/x-tex",
+                        "application/x-latext",
+                        "text/x-c",
+                        "text/x-php",
+                        "text/plain",
+                        "text/markdown",
+                        "application/pdf",
+                        "text/x-sh",
+                        "text/x-script.python",
+                        "text/x-typescript",
+                        "text/x-ruby",
+                        "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                        "text/html",
+                        "text/javascript"
+                    ],
+                    "image_mime_types": [
+                        "image/jpeg",
+                        "image/png",
+                        "image/gif",
+                        "image/webp"
+                    ],
+                    "can_accept_all_mime_types": true
+                }
+            },
+            "enabled_tools": [
+                "tools",
+                "tools2"
+            ]
+        },
+        {
+            "slug": "gpt-4-dalle",
+            "max_tokens": 4095,
+            "title": "DALL·E 3",
+            "description": "Try out GPT-4 with DALL·E 3",
+            "tags": [
+                "gpt4",
+                "beta"
+            ],
+            "capabilities": {},
+            "product_features": {}
+        }
+    ],
+    "categories": [
+        {
+            "category": "gpt_3.5",
+            "human_category_name": "GPT-3.5",
+            "subscription_level": "free",
+            "default_model": "text-davinci-002-render-sha",
+            "code_interpreter_model": "text-davinci-002-render-sha-code-interpreter",
+            "plugins_model": "text-davinci-002-render-sha-plugins"
+        },
+        {
+            "category": "gpt_4",
+            "human_category_name": "GPT-4",
+            "subscription_level": "plus",
+            "default_model": "gpt-4",
+            "browsing_model": "gpt-4-browsing",
+            "code_interpreter_model": "gpt-4-code-interpreter",
+            "plugins_model": "gpt-4-plugins",
+            "dalle_model": "gpt-4-dalle"
+        }
+    ]
+}
 
 $done({body: JSON.stringify(obj)});
