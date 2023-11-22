@@ -26,7 +26,6 @@ obj.data.sortedItems = [
         "canShowVip": true
     }
 ],
-    obj.data.watchInfo.m3u8.currentQuality = "AI_OD",
     obj.data.watchInfo.m3u8.sortedItems=[
         {
             "qualityDescription": "高清",
