@@ -5,7 +5,7 @@ obj.data.sortedItems = [
         "qualityDescription": "高清",
         "qualityCode": "SD",
         "canPlay": true,
-        "initialQuality": false,
+        "initialQuality": true,
         "canShowLogin": false,
         "canShowVip": false
     },
@@ -21,37 +21,52 @@ obj.data.sortedItems = [
         "qualityDescription": "AI原画",
         "qualityCode": "AI_OD",
         "canPlay": true,
+        "initialQuality": false,
+        "canShowLogin": false,
+        "canShowVip": true
+    },
+    {
+        "qualityDescription": "4K",
+        "qualityCode": "UHD4K",
+        "canPlay": true,
+        "initialQuality": false,
+        "canShowLogin": false,
+        "canShowVip": true
+    }
+];
+obj.data.watchInfo.sortedItems = [
+    {
+        "qualityDescription": "高清",
+        "qualityCode": "SD",
+        "canPlay": true,
         "initialQuality": true,
         "canShowLogin": false,
         "canShowVip": false
+    },
+    {
+        "qualityDescription": "超清",
+        "qualityCode": "HD",
+        "canPlay": true,
+        "initialQuality": false,
+        "canShowLogin": false,
+        "canShowVip": false
+    },
+    {
+        "qualityDescription": "AI原画",
+        "qualityCode": "AI_OD",
+        "canPlay": true,
+        "initialQuality": false,
+        "canShowLogin": false,
+        "canShowVip": true
+    },
+    {
+        "qualityDescription": "4K",
+        "qualityCode": "UHD4K",
+        "canPlay": true,
+        "initialQuality": false,
+        "canShowLogin": false,
+        "canShowVip": true
     }
-];
-    obj.data.watchInfo.m3u8.sortedItems=[
-        {
-            "qualityDescription": "高清",
-            "qualityCode": "SD",
-            "canPlay": true,
-            "initialQuality": false,
-            "canShowLogin": false,
-            "canShowVip": false
-        },
-        {
-            "qualityDescription": "超清",
-            "qualityCode": "HD",
-            "canPlay": true,
-            "initialQuality": false,
-            "canShowLogin": false,
-            "canShowVip": false
-        },
-        {
-            "qualityDescription": "AI原画",
-            "qualityCode": "AI_OD",
-            "canPlay": true,
-            "initialQuality": true,
-            "canShowLogin": false,
-            "canShowVip": false
-        }
-    ];
-obj.data.watchInfo.m3u8.currentQuality = "AI_OD";
+]
 
-    $done({body: JSON.stringify(obj)});
+$done({body: JSON.stringify(obj)});

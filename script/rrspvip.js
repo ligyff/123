@@ -1,144 +1,159 @@
 var obj = JSON.parse($response.body);
 
 obj.data.user.vipInfo = {
-    "level": "5",
+    "level": "1",
     "valid": true,
-    "expiredTime": 2599319252
-};
-obj.data.user.vipLevel = "5";
-obj.data.user.medalList = [{
-    "name": "大魔王",
-    "endTime": "2052-5-15 1:7:32",
-    "imgUrl": "http://img.qwapp.top/cover/20200424/o_1587720799676.png",
-    "id": 1
-}];
-obj.data.user.privilegeList = [{
-    "id": null,
-    "createTimeStr": "",
-    "createTime": null,
-    "updateTime": null,
-    "effectObject": "video",
-    "action": "play",
-    "function": "originalPainting",
-    "func": "originalPainting",
-    "description": "解锁原画",
-    "icon": "jiesuoyuanhua",
-    "endTime": 9999987654321
-}, {
-    "id": null,
-    "createTimeStr": "",
-    "createTime": null,
-    "updateTime": null,
-    "effectObject": "mall",
-    "action": "sale",
-    "function": "mallDiscount",
-    "func": "mallDiscount",
-    "description": "龙醇商城九折",
-    "icon": "longchunshangcheng",
-    "endTime": 9999987654321
-}, {
-    "id": null,
-    "createTimeStr": "",
-    "createTime": null,
-    "updateTime": null,
-    "effectObject": "article",
-    "action": "write",
-    "function": "highLight",
-    "func": "highLight",
-    "description": "高亮发帖",
-    "icon": "gaoliangfatie",
-    "endTime": 9999987654321
-}, {
-    "id": null,
-    "createTimeStr": "",
-    "createTime": null,
-    "updateTime": null,
-    "effectObject": "nickName",
-    "action": "show",
-    "function": "nameHighLight",
-    "func": "nameHighLight",
-    "description": "高亮昵称",
-    "icon": "gaoliangnicheng",
-    "endTime": 9999987654321
-}, {
-    "id": null,
-    "createTimeStr": "",
-    "createTime": null,
-    "updateTime": null,
-    "effectObject": "comment",
-    "action": "write",
-    "function": "highLight",
-    "func": "highLight",
-    "description": "高亮评论回复",
-    "icon": "huifu",
-    "endTime": 9999987654321
-}, {
-    "id": null,
-    "createTimeStr": "",
-    "createTime": null,
-    "updateTime": null,
-    "effectObject": "danmu",
-    "action": "send",
-    "function": "superBarrageBlue",
-    "func": "superBarrageBlue",
-    "description": "超级弹幕",
-    "icon": "chaojidanmu",
-    "endTime": 9999987654321
-}, {
-    "id": null,
-    "createTimeStr": "",
-    "createTime": null,
-    "updateTime": null,
-    "effectObject": "video",
-    "action": "play",
-    "function": "vipVideo",
-    "func": "vipVideo",
-    "description": "勋章专享剧集",
-    "icon": "zhuanxiangjuji",
-    "endTime": 9999987654321
-}, {
-    "id": null,
-    "createTimeStr": "",
-    "createTime": null,
-    "updateTime": null,
-    "effectObject": "growth",
-    "action": "play",
-    "function": "0.4",
-    "func": "0.4",
-    "description": "看剧经验+40%",
-    "icon": "jingyanzhijiacheng",
-    "endTime": 9999987654321
-}, {
-    "id": null,
-    "createTimeStr": "",
-    "createTime": null,
-    "updateTime": null,
-    "effectObject": "video",
-    "action": "play",
-    "function": "noLimit",
-    "func": "noLimit",
-    "description": "看剧无限制",
-    "icon": "kanjuwuxianzhi",
-    "endTime": 9999987654321
-}, {
-    "id": null,
-    "createTimeStr": "",
-    "createTime": null,
-    "updateTime": null,
-    "effectObject": "video",
-    "action": "play",
-    "function": "noAd",
-    "func": "noAd",
-    "description": "看剧无广告",
-    "icon": "kanjuwuguanggao",
-    "endTime": 9999987654321
-}];
+    "expiredTime": 1890120201000
+};1890120201984
+obj.data.user.vipLevel = "1";
+obj.data.user.medalList =[
+    {
+        "imgUrl": "http://img.qwapp.top/cover/20200424/o_1587720799676.png",
+        "id": 1,
+        "endTime": "2029-12-23 17:14:24",
+        "name": "大魔王"
+    }
+];
 obj.data.user.vipMedal = {
-    "name": "大魔王",
-    "endTime": "2052-5-15 1:7:32",
     "imgUrl": "http://img.qwapp.top/cover/20200424/o_1587720799676.png",
     "id": 1,
-    "isExpired": false
+    "endTime": "2029-12-23 17:14:24",
+    "isExpired": false,
+    "name": "大魔王"
 };
+obj.data.user.privilegeList = [
+    {
+        "action": "play",
+        "effectObject": "video",
+        "id": null,
+        "createTimeStr": "",
+        "updateTime": null,
+        "function": "originalPainting",
+        "func": "originalPainting",
+        "endTime": 1890120201984,
+        "description": "解锁原画",
+        "createTime": null,
+        "icon": "jiesuoyuanhua"
+    },
+    {
+        "action": "sale",
+        "effectObject": "mall",
+        "id": null,
+        "createTimeStr": "",
+        "updateTime": null,
+        "function": "mallDiscount",
+        "func": "mallDiscount",
+        "endTime": 1890120201984,
+        "description": "龙醇商城九折",
+        "createTime": null,
+        "icon": "longchunshangcheng"
+    },
+    {
+        "action": "write",
+        "effectObject": "article",
+        "id": null,
+        "createTimeStr": "",
+        "updateTime": null,
+        "function": "highLight",
+        "func": "highLight",
+        "endTime": 1890120201984,
+        "description": "高亮发帖",
+        "createTime": null,
+        "icon": "gaoliangfatie"
+    },
+    {
+        "action": "show",
+        "effectObject": "nickName",
+        "id": null,
+        "createTimeStr": "",
+        "updateTime": null,
+        "function": "nameHighLight",
+        "func": "nameHighLight",
+        "endTime": 1890120201984,
+        "description": "高亮昵称",
+        "createTime": null,
+        "icon": "gaoliangnicheng"
+    },
+    {
+        "action": "write",
+        "effectObject": "comment",
+        "id": null,
+        "createTimeStr": "",
+        "updateTime": null,
+        "function": "highLight",
+        "func": "highLight",
+        "endTime": 1890120201984,
+        "description": "高亮评论回复",
+        "createTime": null,
+        "icon": "huifu"
+    },
+    {
+        "action": "send",
+        "effectObject": "danmu",
+        "id": null,
+        "createTimeStr": "",
+        "updateTime": null,
+        "function": "superBarrageBlue",
+        "func": "superBarrageBlue",
+        "endTime": 1890120201984,
+        "description": "超级弹幕",
+        "createTime": null,
+        "icon": "chaojidanmu"
+    },
+    {
+        "action": "play",
+        "effectObject": "video",
+        "id": null,
+        "createTimeStr": "",
+        "updateTime": null,
+        "function": "vipVideo",
+        "func": "vipVideo",
+        "endTime": 1890120201984,
+        "description": "勋章专享剧集",
+        "createTime": null,
+        "icon": "zhuanxiangjuji"
+    },
+    {
+        "action": "play",
+        "effectObject": "growth",
+        "id": null,
+        "createTimeStr": "",
+        "updateTime": null,
+        "function": "0.4",
+        "func": "0.4",
+        "endTime": 1890120201984,
+        "description": "看剧经验+40%",
+        "createTime": null,
+        "icon": "jingyanzhijiacheng"
+    },
+    {
+        "action": "play",
+        "effectObject": "video",
+        "id": null,
+        "createTimeStr": "",
+        "updateTime": null,
+        "function": "noLimit",
+        "func": "noLimit",
+        "endTime": 1890120201984,
+        "description": "看剧无限制",
+        "createTime": null,
+        "icon": "kanjuwuxianzhi"
+    },
+    {
+        "action": "play",
+        "effectObject": "video",
+        "id": null,
+        "createTimeStr": "",
+        "updateTime": null,
+        "function": "noAd",
+        "func": "noAd",
+        "endTime": 1890120201984,
+        "description": "看剧无广告",
+        "createTime": null,
+        "icon": "kanjuwuguanggao"
+    }
+];
+obj.data.user.changedValue=15;
+
 
 $done({body: JSON.stringify(obj)});
