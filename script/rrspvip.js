@@ -3,21 +3,21 @@ var obj = JSON.parse($response.body);
 obj.data.user.vipInfo = {
     "level": "1",
     "valid": true,
-    "expiredTime": 1890120201000
-};1890120201984
+    "expiredTime": 1732358790000
+};
 obj.data.user.vipLevel = "1";
 obj.data.user.medalList =[
     {
         "imgUrl": "http://img.qwapp.top/cover/20200424/o_1587720799676.png",
         "id": 1,
-        "endTime": "2029-12-23 17:14:24",
+        "endTime": "2024-11-23 18:46:30",
         "name": "大魔王"
     }
 ];
 obj.data.user.vipMedal = {
     "imgUrl": "http://img.qwapp.top/cover/20200424/o_1587720799676.png",
     "id": 1,
-    "endTime": "2029-12-23 17:14:24",
+    "endTime": "2024-11-23 18:46:30",
     "isExpired": false,
     "name": "大魔王"
 };
@@ -30,7 +30,7 @@ obj.data.user.privilegeList = [
         "updateTime": null,
         "function": "originalPainting",
         "func": "originalPainting",
-        "endTime": 1890120201984,
+        "endTime": 1732358790000,
         "description": "解锁原画",
         "createTime": null,
         "icon": "jiesuoyuanhua"
@@ -43,7 +43,7 @@ obj.data.user.privilegeList = [
         "updateTime": null,
         "function": "mallDiscount",
         "func": "mallDiscount",
-        "endTime": 1890120201984,
+        "endTime": 1732358790000,
         "description": "龙醇商城九折",
         "createTime": null,
         "icon": "longchunshangcheng"
@@ -56,7 +56,7 @@ obj.data.user.privilegeList = [
         "updateTime": null,
         "function": "highLight",
         "func": "highLight",
-        "endTime": 1890120201984,
+        "endTime": 1732358790000,
         "description": "高亮发帖",
         "createTime": null,
         "icon": "gaoliangfatie"
@@ -69,7 +69,7 @@ obj.data.user.privilegeList = [
         "updateTime": null,
         "function": "nameHighLight",
         "func": "nameHighLight",
-        "endTime": 1890120201984,
+        "endTime": 1732358790000,
         "description": "高亮昵称",
         "createTime": null,
         "icon": "gaoliangnicheng"
@@ -82,7 +82,7 @@ obj.data.user.privilegeList = [
         "updateTime": null,
         "function": "highLight",
         "func": "highLight",
-        "endTime": 1890120201984,
+        "endTime": 1732358790000,
         "description": "高亮评论回复",
         "createTime": null,
         "icon": "huifu"
@@ -95,7 +95,7 @@ obj.data.user.privilegeList = [
         "updateTime": null,
         "function": "superBarrageBlue",
         "func": "superBarrageBlue",
-        "endTime": 1890120201984,
+        "endTime": 1732358790000,
         "description": "超级弹幕",
         "createTime": null,
         "icon": "chaojidanmu"
@@ -108,7 +108,7 @@ obj.data.user.privilegeList = [
         "updateTime": null,
         "function": "vipVideo",
         "func": "vipVideo",
-        "endTime": 1890120201984,
+        "endTime": 1732358790000,
         "description": "勋章专享剧集",
         "createTime": null,
         "icon": "zhuanxiangjuji"
@@ -121,7 +121,7 @@ obj.data.user.privilegeList = [
         "updateTime": null,
         "function": "0.4",
         "func": "0.4",
-        "endTime": 1890120201984,
+        "endTime": 1732358790000,
         "description": "看剧经验+40%",
         "createTime": null,
         "icon": "jingyanzhijiacheng"
@@ -134,7 +134,7 @@ obj.data.user.privilegeList = [
         "updateTime": null,
         "function": "noLimit",
         "func": "noLimit",
-        "endTime": 1890120201984,
+        "endTime": 1732358790000,
         "description": "看剧无限制",
         "createTime": null,
         "icon": "kanjuwuxianzhi"
@@ -147,7 +147,7 @@ obj.data.user.privilegeList = [
         "updateTime": null,
         "function": "noAd",
         "func": "noAd",
-        "endTime": 1890120201984,
+        "endTime": 1732358790000,
         "description": "看剧无广告",
         "createTime": null,
         "icon": "kanjuwuguanggao"
