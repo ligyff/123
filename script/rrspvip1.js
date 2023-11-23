@@ -6,7 +6,7 @@ obj.data.sortedItems = [
         "qualityCode": "SD",
         "canPlay": true,
         "initialQuality": true,
-        "canShowLogin": false,
+        "canShowLogin": true,
         "canShowVip": false
     },
     {
@@ -14,7 +14,7 @@ obj.data.sortedItems = [
         "qualityCode": "HD",
         "canPlay": true,
         "initialQuality": false,
-        "canShowLogin": false,
+        "canShowLogin": true,
         "canShowVip": false
     },
     {
@@ -22,7 +22,7 @@ obj.data.sortedItems = [
         "qualityCode": "AI_OD",
         "canPlay": true,
         "initialQuality": false,
-        "canShowLogin": false,
+        "canShowLogin": true,
         "canShowVip": true
     },
     {
@@ -30,7 +30,7 @@ obj.data.sortedItems = [
         "qualityCode": "UHD4K",
         "canPlay": true,
         "initialQuality": false,
-        "canShowLogin": false,
+        "canShowLogin": true,
         "canShowVip": true
     }
 ];
@@ -40,7 +40,7 @@ obj.data.watchInfo.sortedItems = [
         "qualityCode": "SD",
         "canPlay": true,
         "initialQuality": true,
-        "canShowLogin": false,
+        "canShowLogin": true,
         "canShowVip": false
     },
     {
@@ -48,7 +48,7 @@ obj.data.watchInfo.sortedItems = [
         "qualityCode": "HD",
         "canPlay": true,
         "initialQuality": false,
-        "canShowLogin": false,
+        "canShowLogin": true,
         "canShowVip": false
     },
     {
@@ -56,7 +56,7 @@ obj.data.watchInfo.sortedItems = [
         "qualityCode": "AI_OD",
         "canPlay": true,
         "initialQuality": false,
-        "canShowLogin": false,
+        "canShowLogin": true,
         "canShowVip": true
     }
 ]
