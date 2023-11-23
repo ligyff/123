@@ -58,14 +58,6 @@ obj.data.watchInfo.sortedItems = [
         "initialQuality": false,
         "canShowLogin": false,
         "canShowVip": true
-    },
-    {
-        "qualityDescription": "4K",
-        "qualityCode": "UHD4K",
-        "canPlay": true,
-        "initialQuality": false,
-        "canShowLogin": false,
-        "canShowVip": true
     }
 ]
 
