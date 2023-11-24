@@ -1,0 +1,11 @@
+#!name=aptv
+#!desc=aptv
+#https://raw.githubusercontent.com/ligengying/123/master/module/aptv.module
+
+
+[Script]
+aptv=type=http-response,pattern= ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/aptv.js
+
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
