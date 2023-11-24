@@ -1,0 +1,14 @@
+#!name=Fileball
+#!desc=Fileball
+#!url=https://raw.githubusercontent.com/ligengying/123/master/module/fileball.module
+
+[Url Rewrite]
+
+^https:\/\/app-measurement\.com\/config\/app\/1?(.*?)*$ url reject
+
+[Script]
+Pro = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/fileball1.js
+projects = type=http-response,pattern=^https://firebaseremoteconfig.googleapis.com/v1/projects/filebox-ac299/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/fileball2.js
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com, app-measurement.com,*.googleapis.com
