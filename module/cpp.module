@@ -1,0 +1,13 @@
+#!url=https://whatshub.top/module/cpp.module
+#!name=车票票
+#!desc=车票票解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/Plugallery.png
+#!homepage=https://whatshub.top
+#!author=89996462
+[Script]
+cpp=type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/cpp.js
+
+
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
