@@ -1,6 +1,7 @@
 #!name=解锁StormSniffer
 #!desc=解锁StormSniffer
 #!author=Thanks PayNe
+#!url=https://raw.githubusercontent.com/ligengying/123/master/module/StormSniffer.sgmodule
 
 [Script]
 StormSnifferHeader = type=http-request, pattern="^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$", script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/ssHeader.js, timeout=60, script-update-interval=0
