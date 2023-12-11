@@ -47,14 +47,14 @@ obj.accounts.default.features = [
 ];
 
 obj.accounts.default.entitlement = {
-    "subscription_id": "d0dcb1fc-56aa-4cd9-90ef-37f1e03576d3",
+    "subscription_id": "3e7d7b26-3c0b-401e-b361-123777666cqy",
     "has_active_subscription": true,
     "subscription_plan": "chatgptplusplan",
     "expires_at": "2029-12-13T13:43:25+00:00"
 };
 
 obj.accounts.default.last_active_subscription = {
-    "subscription_id": "d0dcb1fc-56aa-4cd9-90ef-37f1e03576d3",
+    "subscription_id": "3e7d7b26-3c0b-401e-b361-123777666cqy",
     "purchase_origin_platform": "chatgpt_not_purchased",
     "will_renew": true
 };
