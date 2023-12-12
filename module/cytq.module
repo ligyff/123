@@ -7,5 +7,4 @@
 hostname= %APPEND% *.caiyunapp.com,*.cyapi.com,*.cyapi.cn ,*.caiyunapp.cn
 [URL Rewrite]
 ^https:\/\/ad\.caiyunapp\.com\/ _ reject
-^https?:\/\/api\.caiyunapp\.com\/v1\/activity url reject
 
