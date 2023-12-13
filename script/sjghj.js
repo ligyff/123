@@ -4,7 +4,7 @@
 
 日期:2023.04.15
 [rewrite_local]
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/ligengying/123/main/sjghj.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/ligengying/123/master/script/sjghj.js
 hostname = buy.itunes.apple.com
 **************************************/
 var obj = JSON.parse($response.body);
