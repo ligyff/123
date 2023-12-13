@@ -51,7 +51,7 @@ var objc = JSON.parse($response.body);
         "period_type" : "normal",
         "purchase_date" : "2023-08-11T09:18:00Z",
         "billing_issues_detected_at" : null,
-        "ownership_type" : "PURCHASED",
+        "ownership_type" : "FAMILY_SHARED",
         "store" : "app_store",
         "auto_resume_date" : null
       }
