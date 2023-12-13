@@ -26,6 +26,10 @@ hostname = api.revenuecat.com
 
 var objc = JSON.parse($response.body);
 
+var currentUtcTime = new Date().toISOString();
+
+var timestamp = new Date().getTime();
+
     objc = {
   "request_date_ms" : 1702464168646,
   "request_date" : "2023-12-13T10:42:48Z",
