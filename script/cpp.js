@@ -27,46 +27,46 @@ hostname = api.revenuecat.com
 var objc = JSON.parse($response.body);
 
     objc = {
-  "request_date_ms" : 1691745938403,
-  "request_date" : "2023-08-11T09:25:38Z",
+  "request_date_ms" : 1702464168646,
+  "request_date" : "2023-12-13T10:42:48Z",
   "subscriber" : {
     "non_subscriptions" : {
 
     },
-    "first_seen" : "2023-08-11T09:15:51Z",
-    "original_application_version" : "2",
+    "first_seen" : "2023-12-13T06:00:52Z",
+    "original_application_version" : "1",
     "other_purchases" : {
 
     },
     "management_url" : "https://apps.apple.com/account/subscriptions",
     "subscriptions" : {
-      "eticket_family_sharing_for_old_member" : {
-        "original_purchase_date" : "2023-08-11T09:18:00Z",
-        "expires_date" : "9999-08-18T09:18:00Z",
-        "is_sandbox" : true,
+      "eticket_with_watch_6m_3d0" : {
+        "original_purchase_date" : "2023-12-13T10:33:18Z",
+        "expires_date" : "2024-12-16T10:33:17Z",
+        "is_sandbox" : false,
         "refunded_at" : null,
-        "store_transaction_id" : "430001519739141",
-        "unsubscribe_detected_at" : "9999-08-18T09:18:00Z",
+        "store_transaction_id" : "520001547916370",
+        "unsubscribe_detected_at" : null,
         "grace_period_expires_date" : null,
-        "period_type" : "normal",
-        "purchase_date" : "2023-08-11T09:18:00Z",
+        "period_type" : "trial",
+        "purchase_date" : "2023-12-13T10:33:17Z",
         "billing_issues_detected_at" : null,
-        "ownership_type" : "FAMILY_SHARED",
+        "ownership_type" : "PURCHASED",
         "store" : "app_store",
         "auto_resume_date" : null
       }
     },
     "entitlements" : {
-      "vip" : {
+      "vip+watch_vip" : {
         "grace_period_expires_date" : null,
-        "purchase_date" : "2023-08-11T09:18:00Z",
-        "product_identifier" : "eticket_family_sharing_for_old_member",
-        "expires_date" : "9999-08-18T09:18:00Z"
+        "purchase_date" : "2023-12-13T10:33:17Z",
+        "product_identifier" : "eticket_with_watch_6m_3d0",
+        "expires_date" : "2024-12-16T10:33:17Z"
       }
     },
-    "original_purchase_date" : "2023-08-11T09:14:59Z",
-    "original_app_user_id" : "$RCAnonymousID:13a81f8ed4e7439d9b826ac61dafba31",
-    "last_seen" : "2023-08-11T09:15:51Z"
+    "original_purchase_date" : "2023-12-06T10:28:48Z",
+    "original_app_user_id" : "$RCAnonymousID:1a9fc0d945ac4f0cafa17608ee6d3e93",
+    "last_seen" : "2023-12-13T06:00:52Z"
   }
 }
 
