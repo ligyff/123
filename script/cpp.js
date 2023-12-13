@@ -43,7 +43,7 @@ var objc = JSON.parse($response.body);
       "eticket_family_sharing_for_old_member" : {
         "original_purchase_date" : "2023-08-11T09:18:00Z",
         "expires_date" : "9999-08-18T09:18:00Z",
-        "is_sandbox" : false,
+        "is_sandbox" : true,
         "refunded_at" : null,
         "store_transaction_id" : "430001519739141",
         "unsubscribe_detected_at" : "9999-08-18T09:18:00Z",
