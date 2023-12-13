@@ -40,7 +40,7 @@ var objc = JSON.parse($response.body);
     },
     "management_url" : "https://apps.apple.com/account/subscriptions",
     "subscriptions" : {
-      "eticket_9.9_1y_7d0" : {
+      "eticket_family_sharing_for_old_member" : {
         "original_purchase_date" : "2023-08-11T09:18:00Z",
         "expires_date" : "9999-08-18T09:18:00Z",
         "is_sandbox" : false,
@@ -60,7 +60,7 @@ var objc = JSON.parse($response.body);
       "vip" : {
         "grace_period_expires_date" : null,
         "purchase_date" : "2023-08-11T09:18:00Z",
-        "product_identifier" : "eticket_9.9_1y_7d0",
+        "product_identifier" : "eticket_family_sharing_for_old_member",
         "expires_date" : "9999-08-18T09:18:00Z"
       }
     },
