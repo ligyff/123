@@ -42,13 +42,13 @@ var objc = JSON.parse($response.body);
     "subscriptions" : {
       "eticket_with_watch_6m_3d0" : {
         "original_purchase_date" : "2023-12-13T10:33:18Z",
-        "expires_date" : "2023-12-16T10:33:17Z",
+        "expires_date" : "2024-06-13T10:33:17Z",
         "is_sandbox" : false,
         "refunded_at" : null,
         "store_transaction_id" : "520001547916370",
         "unsubscribe_detected_at" : null,
         "grace_period_expires_date" : null,
-        "period_type" : "trial",
+        "period_type" : "normal",
         "purchase_date" : "2023-12-13T10:33:17Z",
         "billing_issues_detected_at" : null,
         "ownership_type" : "PURCHASED",
@@ -61,7 +61,7 @@ var objc = JSON.parse($response.body);
         "grace_period_expires_date" : null,
         "purchase_date" : "2023-12-13T10:33:17Z",
         "product_identifier" : "eticket_with_watch_6m_3d0",
-        "expires_date" : "2023-12-16T10:33:17Z"
+        "expires_date" : "2024-06-13T10:33:17Z"
       }
     },
     "original_purchase_date" : "2023-12-06T10:28:48Z",
