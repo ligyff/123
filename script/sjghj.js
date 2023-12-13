@@ -30,3 +30,6 @@ var obj = JSON.parse($response.body);
          "original_purchase_date" : "2022-11-30 02:20:00 Etc/GMT"
        }
      ]
+   
+$done({body: JSON.stringify(obj)});
+
