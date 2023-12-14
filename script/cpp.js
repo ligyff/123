@@ -30,26 +30,6 @@ var currentUtcTime = objc.request_date;
 
 var timestamp =objc.request_date_ms;
 
-// 创建一个表示今天日期的 Date 对象
-var today = new Date();
-var year = today.getFullYear();
-var month = String(today.getMonth() + 1).padStart(2, '0');
-var day = String(today.getDate()).padStart(2, '0');
-// 构造新的日期字符串
-var today1 = year + '-' + month + '-' + day;
-
-// 将日期增加3天
-today.setDate(today.getDate() + 3);
-// 获取增加3天后的年、月、日
-var year1 = today.getFullYear();
-var month1 = String(today.getMonth() + 1).padStart(2, '0');
-var day1 = String(today.getDate()).padStart(2, '0');
-
-// 构造新的日期字符串
-var threeDaysLater1 = year1 + '-' + month1 + '-' + day1;
-
-
-
     objc = {
   "request_date_ms" : 1702464168646,
   "request_date" : "2023-12-13T10:42:48Z",
@@ -96,9 +76,24 @@ var threeDaysLater1 = year1 + '-' + month1 + '-' + day1;
 
 objc.request_date=currentUtcTime;
 objc.request_date_ms =timestamp;
-obj.replace('2023-12-13', today1).replace('2023-12-16',threeDaysLater1)
 
-var strJson = JSON.stringify(objc);
+// 创建一个表示今天日期的 Date 对象
+var today = new Date();
+var year = today.getFullYear();
+var month = String(today.getMonth() + 1).padStart(2, '0');
+var day = String(today.getDate()).padStart(2, '0');
+// 构造新的日期字符串
+var today1 = year + '-' + month + '-' + day;
+
+// 将日期增加3天
+today.setDate(today.getDate() + 3);
+// 获取增加3天后的年、月、日
+var year1 = today.getFullYear();
+var month1 = String(today.getMonth() + 1).padStart(2, '0');
+var day1 = String(today.getDate()).padStart(2, '0');
+
+// 构造新的日期字符串
+var threeDaysLater1 = year1 + '-' + month1 + '-' + day1;
 
 
-$done({body : JSON.stringify(objc)});
+$done({body : JSON.stringify(objc).replace('2023-12-13', today1).replace('2023-12-16',threeDaysLater1)});
