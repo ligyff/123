@@ -96,4 +96,4 @@ var day1 = String(today.getDate()).padStart(2, '0');
 var threeDaysLater1 = year1 + '-' + month1 + '-' + day1;
 
 
-$done({body : JSON.stringify(objc).replace('2023-12-13', today1).replace('2023-12-16',threeDaysLater1)});
+$done({body : JSON.stringify(objc).replaceAll('2023-12-13', today1).replaceAll('2023-12-16',threeDaysLater1)});
