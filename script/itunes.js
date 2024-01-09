@@ -150,7 +150,7 @@ if(bundleId === 'com.vitalii.water'){
   "Telegram" : "https://t.me/chxm1023"
   };
 }else if( bundleId === 'livintis.com.wallpapermonster'){
-  console.log("小组件盒子");
+  console.log("壁纸树");
   obj = {
   "status" : 0,
   "receipt" : {
