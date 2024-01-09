@@ -1,5 +1,6 @@
 var obj = JSON.parse($response.body);
 var bundleId = obj.receipt.bundle_id;
+console.log("itunes.js------------------"+bundleId)
 if(bunleId==='com.vitalii.water'){
   obj = {
    "environment" : "Production",
