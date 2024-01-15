@@ -3,9 +3,9 @@
 #!author=Thanks PayNe
 #!url=https://raw.githubusercontent.com/ligengying/123/master/module/StormSniffer.sgmodule
 
-[Script]
-StormSnifferHeader = type=http-request, pattern="^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$", script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/ssHeader.js, timeout=60, script-update-interval=0
-StormSnifferBody = type=http-response, pattern="^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/user-profile\/$", requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/ssbody.js, timeout=60, script-update-interval=0
+[rewrite_local]
+^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$ url script-request-header https://raw.githubusercontent.com/Yu9191/Rewrite/main/ssHeader.js
+^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/user-profile\/$ url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/ssbody.js
 
-[MITM]
-hostname = %APPEND% *.x-storm.com
+[mitm]
+hostname = *.x-storm.com
