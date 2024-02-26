@@ -1,6 +1,7 @@
 var obj = JSON.parse($response.body);
 var bundleId = obj.receipt.bundle_id;
-console.log("itunes.js------------------" + bundleId)
+console.log("itunes.js------------------" + obj);
+console.log("itunes.js------------------" + bundleId);
 if (bundleId === 'com.vitalii.water') {
     console.log("羊驼喝水");
     obj = {
