@@ -92,6 +92,6 @@ if (typeof $response == "undefined") {
 }
 
 
-console.log("原始数据--------"+JSON.stringify(res_new));
+console.log("修改数据--------"+JSON.stringify(res_new));
 
 $done({body: JSON.stringify(res_new)});
