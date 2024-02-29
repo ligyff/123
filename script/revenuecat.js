@@ -1,5 +1,7 @@
 var res_new = {};
-// var res_old = JSON.parse(typeof $response != "undefined" && $response.body || null);
+var res_old = JSON.parse(typeof $response != "undefined" && $response.body || null);
+
+console.log("原始数据--------"+JSON.stringify(res_old));
 
 var headers = $request.headers;
 var userAgent = headers['User-Agent'];
@@ -88,5 +90,8 @@ if (typeof $response == "undefined") {
         }
     }
 }
+
+
+console.log("原始数据--------"+JSON.stringify(res_new));
 
 $done({body: JSON.stringify(res_new)});
