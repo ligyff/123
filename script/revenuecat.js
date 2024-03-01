@@ -1,7 +1,7 @@
 var res_new = {};
 var res_old = JSON.parse(typeof $response != "undefined" && $response.body || null);
 
-console.log("原始数据--------"+JSON.stringify(res_old));
+console.log("原始数据--------" + JSON.stringify(res_old));
 
 var headers = $request.headers;
 var userAgent = headers['User-Agent'];
@@ -15,8 +15,7 @@ if (typeof $response == "undefined") {
 
     res_new.headers = $request.headers;
 } else if (bundleId === 'com.ideation.Stress') {
-    console.log("StressWatch  userAgent:" + userAgent);
-    console.log("StressWatch  bundleId:" + bundleId);
+    console.log("StressWatch");
     res_new = {
         "request_date_ms": 1704970859633,
         "request_date": "2024-01-11T11:00:59Z",
@@ -50,9 +49,8 @@ if (typeof $response == "undefined") {
             "last_seen": "2024-01-11T10:59:27Z"
         }
     }
-} else if (userAgent.indexOf('Grow')) {
-    console.log("Grow  userAgent:" + userAgent);
-    console.log("Grow  bundleId:" + bundleId);
+} else if (bundleId === 'com.floatingislandapps.grow') {
+    console.log("Grow");
     res_new = {
         "request_date_ms": 1662599120248,
         "request_date": "2022-09-08T01:05:20Z",
@@ -89,9 +87,50 @@ if (typeof $response == "undefined") {
             "last_seen": "2022-09-08T01:04:03Z"
         }
     }
+} else if (bundleId === 'com.neybox.Pillow') {
+    console.log("Pillow");
+    res_new = {
+        "request_date_ms": 1709216291274,
+        "request_date": "2024-02-29T14:18:11Z",
+        "subscriber": {
+            "non_subscriptions": {},
+            "first_seen": "2023-12-18T01:21:48Z",
+            "original_application_version": "206",
+            "other_purchases": {},
+            "management_url": "https://apps.apple.com/account/subscriptions",
+            "subscriptions": {
+                "com.neybox.pillow.premium.year": {
+                    "original_purchase_date": "2024-02-29T12:36:23Z",
+                    "expires_date": "2099-03-07T12:36:22Z",
+                    "is_sandbox": false,
+                    "refunded_at": null,
+                    "store_transaction_id": "520001628931954",
+                    "unsubscribe_detected_at": "2024-02-29T12:44:06Z",
+                    "grace_period_expires_date": null,
+                    "period_type": "trial",
+                    "purchase_date": "2099-02-29T12:36:22Z",
+                    "billing_issues_detected_at": null,
+                    "ownership_type": "PURCHASED",
+                    "store": "app_store",
+                    "auto_resume_date": null
+                }
+            },
+            "entitlements": {
+                "premium": {
+                    "grace_period_expires_date": null,
+                    "purchase_date": "2024-02-29T12:36:22Z",
+                    "product_identifier": "com.neybox.pillow.premium.year",
+                    "expires_date": "2099-03-07T12:36:22Z"
+                }
+            },
+            "original_purchase_date": "2019-10-09T18:11:11Z",
+            "original_app_user_id": "$RCAnonymousID:a9a737ebd8dd4ed6ae0eca1d9ee0f272",
+            "last_seen": "2024-02-29T12:02:01Z"
+        }
+    }
 }
 
 
-console.log("修改数据--------"+JSON.stringify(res_new));
+console.log("修改数据--------" + JSON.stringify(res_new));
 
 $done({body: JSON.stringify(res_new)});
