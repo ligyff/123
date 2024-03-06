@@ -51,47 +51,55 @@ if (typeof $response == "undefined") {
     }
 } else if (bundleId === 'com.floatingislandapps.grow') {
     console.log("Grow");
-    res_new = {
-        "request_date_ms": 1662599120248,
-        "request_date": "2022-09-08T01:05:20Z",
-        "subscriber": {
-            "non_subscriptions": {},
-            "first_seen": "2022-09-08T01:04:03Z",
-            "original_application_version": "810",
-            "other_purchases": {},
-            "management_url": "https://apps.apple.com/account/subscriptions",
-            "subscriptions": {
-                "grow_1y_128": {
-                    "is_sandbox": false,
-                    "ownership_type": "PURCHASED",
-                    "billing_issues_detected_at": null,
-                    "period_type": "trial",
-                    "expires_date": "9999-09-15T01:04:17Z",
-                    "grace_period_expires_date": null,
-                    "unsubscribe_detected_at": "2022-09-08T01:05:19Z",
-                    "original_purchase_date": "2022-09-08T01:04:18Z",
-                    "purchase_date": "2022-09-08T01:04:17Z",
-                    "store": "app_store"
-                }
-            },
-            "entitlements": {
-                "grow.pro": {
-                    "grace_period_expires_date": null,
-                    "purchase_date": "2022-09-08T01:04:17Z",
-                    "product_identifier": "grow_1y_128",
-                    "expires_date": "9999-09-15T01:04:17Z"
-                }
-            },
-            "original_purchase_date": "2022-09-07T13:05:43Z",
-            "original_app_user_id": "$RCAnonymousID:1a143bf1ce22484ca9927aa9bb41727f",
-            "last_seen": "2022-09-08T01:04:03Z"
-        }
-    }
+
+    res_old.subscriber.subscriptions.grow_1y_128.expires_date = "9999-01-05T03:52:21Z";
+    res_old.subscriber.entitlements["grow.pro"].expires_date = "9999-01-05T03:52:21Z";
+    res_new = res_old
 } else if (bundleId === 'com.neybox.Pillow') {
     console.log("Pillow");
-    res_old.subscriber.subscriptions["com.neybox.pillow.premium.year"].expires_date = "2099-03-07T12:36:22Z";
-    res_old.subscriber.entitlements.premium.expires_date = "2099-03-07T12:36:22Z";
-    res_new=res_old
+
+    res_old.subscriber.subscriptions["com.neybox.pillow.premium.year"].expires_date = "9999-03-07T12:36:22Z";
+    res_old.subscriber.entitlements.premium.expires_date = "9999-03-07T12:36:22Z";
+    res_new = res_old
+} else if (bundleId === 'com.floatingislandapps.happydays') {
+    console.log("happydays");
+
+    res_new = {
+        "offerings": [
+            {
+                "metadata": null,
+                "description": "standard",
+                "identifier": "default",
+                "packages": [
+                    {
+                        "platform_product_identifier": "happy_099_1m",
+                        "identifier": "$rc_monthly"
+                    },
+                    {
+                        "platform_product_identifier": "happy_449_1y",
+                        "identifier": "$rc_annual"
+                    },
+                    {
+                        "platform_product_identifier": "happy_999_lifetime",
+                        "identifier": "$rc_lifetime"
+                    }
+                ]
+            },
+            {
+                "metadata": null,
+                "description": "Origin Price",
+                "identifier": "origin",
+                "packages": [
+                    {
+                        "platform_product_identifier": "happy_999_lifetime_original",
+                        "identifier": "$rc_lifetime"
+                    }
+                ]
+            }
+        ],
+        "current_offering_id": "default"
+    }
+
 }
 
 console.log("修改数据--------" + JSON.stringify(res_new));
