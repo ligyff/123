@@ -5,10 +5,10 @@
 
 
 ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ligengying/123/master/script/itunes.js
+^https:\/\/subscription-api\.notedapp\.io\/api\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ligengying/123/master/script/noted.js
 
 
 #iScreen
 ^https?:\/\/pay\.kuso\.xyz\/pay\/pay-check url reject-200
-^https?:\/\/subscription-api\.notedapp\.io\/api\/verifyReceipt url reject-200
 
 hostname = buy.itunes.apple.com, pay.kuso.xyz, subscription-api.notedapp.io
