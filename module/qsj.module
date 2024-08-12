@@ -1,0 +1,11 @@
+#!name=aptv
+#!desc=aptv
+#!url=https://raw.githubusercontent.com/ligengying/123/master/module/qsj.module
+
+
+[Script]
+aptv=type=http-response,pattern= ^https:\/\/m\.allhistory\.com\/api\/m\/social\/user\/v4\/n\/userinfo\/7114109,requires-body=1,script-path=https://raw.githubusercontent.com/ligengying/123/master/script/qsj.js
+
+
+[MITM]
+hostname = %APPEND% m.allhistory.com
